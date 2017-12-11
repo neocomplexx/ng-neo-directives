@@ -28,16 +28,35 @@ import { NeoDirectivesModule } from 'neo-directives';
   imports: [
     BrowserModule,
 
-    // Specify library as an import for default config
+    // Specify library as an import for default config in app.module
     NeoDirectivesModule.forRoot(null)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// Import library in child modules in order to use directives
+import { NeoDirectivesModule } from 'neo-directives';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+
+    // Specify library as an import
+    NeoDirectivesModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class ChildModule { }
 ```
 
-Once your library imported, you can use its directives in your Angular application
+
 
 ## License
 
