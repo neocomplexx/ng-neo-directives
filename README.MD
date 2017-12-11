@@ -6,7 +6,7 @@ Command pattern for Angular
 To install this library, run:
 
 ```bash
-$ npm install neo-directives --save
+$ npm install ng-neo-directives --save
 ```
 
 

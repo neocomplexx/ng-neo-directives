@@ -9,6 +9,7 @@ import { NumbersDirective } from './numbers.directive';
 import { NgbTabSetDirective } from './ngb-tabset.directive';
 import { NgbTabSetModifyDirective } from './ngb-tabsetModify.directive';
 import { KeyListenerDirective } from './keyListener.directive';
+import { HeaderService } from './header.service';
 
 export * from './ng2-command/command.directive';
 export * from './onReturn.directive';
@@ -17,6 +18,7 @@ export * from './numbers.directive';
 export * from './ngb-tabset.directive';
 export * from './ngb-tabsetModify.directive';
 export * from './keyListener.directive';
+export * from './header.service';
 
 @NgModule({
   imports: [
@@ -47,7 +49,8 @@ export class NeoDirectivesModule {
 		return {
 			ngModule: NeoDirectivesModule,
 			providers: [
-				{ provide: COMMAND_CONFIG, useValue: provideConfig(config) }
+        { provide: COMMAND_CONFIG, useValue: provideConfig(config) },
+        HeaderService
 			]
 		};
   }
