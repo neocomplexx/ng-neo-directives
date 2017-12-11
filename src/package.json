@@ -1,0 +1,31 @@
+{
+  "name": "ng-neo-directives",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Neocomplexx",
+    "email": "info@neocomplexx.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "main": "neo-directives.umd.js",
+  "module": "neo-directives.js",
+  "jsnext:main": "neo-directives.js",
+  "typings": "neo-directives.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@ng-bootstrap/ng-bootstrap": "",
+    "ng-neo-modal":"^1.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
