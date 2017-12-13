@@ -1,0 +1,1507 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>neo-directives</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">neo-directives</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">neo-directives</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                        <a href="../license.html"
+                                    >
+                                        <span class="fa fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/NeoDirectivesModule.html" >NeoDirectivesModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/CommandDirective.html" >CommandDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/KeyListenerDirective.html" >KeyListenerDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/NgbTabSetDirective.html" >NgbTabSetDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/NumbersDirective.html" >NumbersDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/OnReturnDirective.html" >OnReturnDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/StringsDirective.html" >StringsDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Command.html"  data-type="entity-link" class="active" >Command</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/CommandOptions.html" >CommandOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ICommand.html" >ICommand</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">neo-directives</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                               <a href="../license.html"
+                                           >
+                                               <span class="fa fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/NeoDirectivesModule.html" >NeoDirectivesModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/CommandDirective.html" >CommandDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/KeyListenerDirective.html" >KeyListenerDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/NgbTabSetDirective.html" >NgbTabSetDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/NumbersDirective.html" >NumbersDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/OnReturnDirective.html" >OnReturnDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/StringsDirective.html" >StringsDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Command.html"  data-type="entity-link" class="active" >Command</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/CommandOptions.html" >CommandOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ICommand.html" >ICommand</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>Command</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/ng2-command/command.directive.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Command object used to encapsulate information which is needed to perform an action.</p>
+
+            </p>
+
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="../interfaces/ICommand.html" target="_self" >ICommand</a></code>
+            </p>
+
+            <p class="comment">
+                <h3>Example</h3>
+            </p>
+            <div class="io-description">
+            </div>
+
+            <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#canExecute">canExecute</a>
+                                    </li>
+                                    <li>
+                                        <a href="#canExecute$">canExecute$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#canExecute$$">canExecute$$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#executionPipe$">executionPipe$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#executionPipe$$">executionPipe$$</a>
+                                    </li>
+                                    <li>
+                                        <a href="#isExecuting">isExecuting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#isExecuting$">isExecuting$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#isExecuting$$">isExecuting$$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#result">result</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#buildExecutionPipe">buildExecutionPipe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#destroy">destroy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#execute">execute</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier"></span>
+                                        <a href="#executeWithResult">executeWithResult</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#verifyCommandExecutionPipe">verifyCommandExecutionPipe</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(executeParam: (undefined) => void, canExecute$?: Observable<boolean>, isAsync?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/ng2-command/command.directive.ts:159</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Creates an instance of Command.</p>
+            </div>
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>executeParam</td>
+                                                              <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>Execute function to invoke - use <code>isAsync: true</code> when {Observable<any>}.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>canExecute$</td>
+                                                              <td>
+                                                                        <code>Observable&lt;boolean&gt;</code>
+                                                              </td>
+                                                              <td>
+                                                                      true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>isAsync</td>
+                                                              <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                      true
+                                                              </td>
+                                                              <td><p>Indicates that the execute function is async e.g. Observable.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="buildExecutionPipe"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        buildExecutionPipe
+                                        </b>
+                                        <a href="#buildExecutionPipe"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>buildExecutionPipe(executeParm: (undefined) => void, isAsync?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="227" class="link-to-prism">src/ng2-command/command.directive.ts:227</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>executeParm</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>isAsync</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="destroy"></a>
+                                    <span class="name">
+                                        <b>
+                                        destroy
+                                        </b>
+                                        <a href="#destroy"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>destroy()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="212" class="link-to-prism">src/ng2-command/command.directive.ts:212</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="execute"></a>
+                                    <span class="name">
+                                        <b>
+                                        execute
+                                        </b>
+                                        <a href="#execute"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>execute(value?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="203" class="link-to-prism">src/ng2-command/command.directive.ts:203</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>value</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="executeWithResult"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier"></span>
+                                        executeWithResult
+                                        </b>
+                                        <a href="#executeWithResult"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>executeWithResult(value?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="207" class="link-to-prism">src/ng2-command/command.directive.ts:207</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>value</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="verifyCommandExecutionPipe"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        verifyCommandExecutionPipe
+                                        </b>
+                                        <a href="#verifyCommandExecutionPipe"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>verifyCommandExecutionPipe()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/ng2-command/command.directive.ts:197</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="canExecute"></a>
+                                    <span class="name">
+                                        <b>
+                                        canExecute
+                                        </b>
+                                        <a href="#canExecute"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>canExecute:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>true</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/ng2-command/command.directive.ts:151</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="canExecute$"></a>
+                                    <span class="name">
+                                        <b>
+                                        canExecute$
+                                        </b>
+                                        <a href="#canExecute$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>canExecute$:     <code>Observable&lt;boolean&gt;</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/ng2-command/command.directive.ts:152</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="canExecute$$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        canExecute$$
+                                        </b>
+                                        <a href="#canExecute$$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>canExecute$$:     <code>Subscription</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subscription</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/ng2-command/command.directive.ts:156</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="executionPipe$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        executionPipe$
+                                        </b>
+                                        <a href="#executionPipe$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>executionPipe$:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>new Subject&lt;{}&gt;()</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/ng2-command/command.directive.ts:154</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="executionPipe$$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        executionPipe$$
+                                        </b>
+                                        <a href="#executionPipe$$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>executionPipe$$:     <code>Subscription</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subscription</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="157" class="link-to-prism">src/ng2-command/command.directive.ts:157</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="isExecuting"></a>
+                                    <span class="name">
+                                        <b>
+                                        isExecuting
+                                        </b>
+                                        <a href="#isExecuting"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>isExecuting:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>false</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/ng2-command/command.directive.ts:149</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="isExecuting$"></a>
+                                    <span class="name">
+                                        <b>
+                                        isExecuting$
+                                        </b>
+                                        <a href="#isExecuting$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>isExecuting$:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>new BehaviorSubject&lt;boolean&gt;(false)</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/ng2-command/command.directive.ts:150</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="isExecuting$$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        isExecuting$$
+                                        </b>
+                                        <a href="#isExecuting$$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>isExecuting$$:     <code>Subscription</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subscription</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/ng2-command/command.directive.ts:155</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="result"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        result
+                                        </b>
+                                        <a href="#result"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>result:     <code>Promise&lt;any&gt;</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Promise&lt;any&gt;</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/ng2-command/command.directive.ts:159</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+            </section>
+
+    </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import {
+	Directive,
+	OnInit,
+	OnDestroy,
+	Input,
+	HostBinding,
+	HostListener,
+	Renderer,
+	ElementRef,
+	Inject
+} from &#x27;@angular/core&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { Subject } from &#x27;rxjs/Subject&#x27;;
+import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
+import { OpaqueToken } from &#x27;@angular/core&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
+import &#x27;rxjs/add/operator/do&#x27;;
+import &#x27;rxjs/add/operator/filter&#x27;;
+import &#x27;rxjs/add/operator/switchMap&#x27;;
+import &#x27;rxjs/add/observable/combineLatest&#x27;;
+/**
+ *
+ * ### Example with options
+ * &#x60;&#x60;&#x60;html
+ * &lt;button [command]&#x3D;&#x27;saveCmd&#x27; [commandOptions]&#x3D;&#x27;{executingCssClass: &#x27;in-progress&#x27;}&#x27;&gt;Save&lt;/button&gt;
+ * &#x60;&#x60;&#x60;
+ * @export
+ * @class CommandDirective
+ * @implements {OnInit}
+ * @implements {OnDestroy}
+ */
+@Directive({
+	selector: &#x27;[command]&#x27;
+})
+export class CommandDirective implements OnInit, OnDestroy {
+
+	@Input() command: ICommand;
+	@Input() commandOptions: CommandOptions;
+	@Input() commandCanExecute: boolean;
+	@Input() commandValue: any;
+	// @HostBinding(&#x27;disabled&#x27;) isDisabled: boolean;
+
+	private canExecute$$: Subscription;
+	private isExecuting$$: Subscription;
+
+	private config: CommandOptions &#x3D; COMMAND_DEFAULT_CONFIG;
+
+	constructor(
+		// @Inject(COMMAND_CONFIG) private config: CommandOptions,
+		private renderer: Renderer,
+		private element: ElementRef
+	) {
+	}
+
+	ngOnInit() {
+		// console.log(&#x27;[commandDirective::init]&#x27;);
+		this.commandOptions &#x3D; Object.assign({}, this.config, this.commandOptions);
+
+		if (!this.command) {
+			throw new Error(&#x27;[commandDirective] command should be defined!&#x27;);
+		} else {
+			this.command.verifyCommandExecutionPipe();
+		}
+
+		this.canExecute$$ &#x3D; this.command.canExecute$
+			.do(x &#x3D;&gt; {
+				// console.log(&#x27;[commandDirective::canExecute$]&#x27;, x);
+				if (this.element.nativeElement.localName &#x3D;&#x3D;&#x3D; &#x27;button&#x27;) {
+					this.element.nativeElement.disabled &#x3D; !x;
+				}
+			}).subscribe();
+		this.isExecuting$$ &#x3D; this.command.isExecuting$
+			.do(x &#x3D;&gt; {
+				// console.log(&#x27;[commandDirective::isExecuting$]&#x27;, x);
+				this.renderer.setElementClass(this.element.nativeElement, this.commandOptions.executingCssClass, x);
+			}).subscribe();
+	}
+
+	@HostListener(&#x27;click&#x27;)
+	onClick() {
+		// console.log(&#x27;[commandDirective::onClick]&#x27;);
+		this.command.execute(this.commandValue);
+	}
+
+	ngOnDestroy() {
+		// console.log(&#x27;[commandDirective::destroy]&#x27;);
+		if (this.command) { this.command.destroy(); }
+		if (this.canExecute$$) { this.canExecute$$.unsubscribe(); }
+		if (this.isExecuting$$) { this.isExecuting$$.unsubscribe(); }
+	}
+}
+
+export interface CommandOptions {
+	/**
+	 * Css Class which gets added/removed on the Command element&#x27;s host while Command isExecuting$.
+	 *
+	 * @type {string}
+	 */
+	executingCssClass: string;
+}
+
+export const COMMAND_DEFAULT_CONFIG: CommandOptions &#x3D; {
+	executingCssClass: &#x27;executing&#x27;,
+};
+
+export const COMMAND_CONFIG &#x3D; new OpaqueToken(&#x27;Command Config&#x27;);
+
+export interface ICommand {
+	/**
+	 * Determines whether the command is currently executing.
+	 */
+	isExecuting: boolean;
+	isExecuting$?: Observable&lt;boolean&gt;;
+	/**
+	 * Determines whether the command can execute or not.
+	 */
+	canExecute: boolean;
+	canExecute$?: Observable&lt;boolean&gt;;
+	/**
+	 * Execute function to invoke.
+	 */
+	execute(value?: any): void;
+
+	/**
+	 * Execute function to invoke and return a result in Promise.
+	 */
+	executeWithResult(value?: any): Promise&lt;any&gt;;
+	/**
+	 * Disposes all resources held by subscriptions.
+	 */
+	destroy(): void;
+
+	verifyCommandExecutionPipe();
+}
+
+
+/**
+ * Command object used to encapsulate information which is needed to perform an action.
+ *
+ * @export
+ * @class Command
+ * @implements {ICommand}
+ */
+export class Command implements ICommand {
+
+	isExecuting &#x3D; false;
+	isExecuting$ &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
+	canExecute &#x3D; true;
+	canExecute$: Observable&lt;boolean&gt;;
+
+	private executionPipe$ &#x3D; new Subject&lt;{}&gt;();
+	private isExecuting$$: Subscription;
+	private canExecute$$: Subscription;
+	private executionPipe$$: Subscription;
+
+	public result: Promise&lt;any&gt;;
+
+	/**
+	 * Creates an instance of Command.
+	 *
+	 * @param {(() &#x3D;&gt; any)} executeParam Execute function to invoke - use &#x60;isAsync: true&#x60; when {Observable&lt;any&gt;}.
+	 * @param {Observable&lt;boolean&gt;} [canExecute] Observable which determines whether it can execute or not.
+	 * @param {boolean} [isAsync] Indicates that the execute function is async e.g. Observable.
+	 */
+	constructor(
+		private executeParam: (any?) &#x3D;&gt; any,
+		canExecute$?: Observable&lt;boolean&gt;,
+		private isAsync?: boolean
+	) {
+		if (canExecute$) {
+			this.canExecute$ &#x3D; Observable.combineLatest(
+				this.isExecuting$,
+				canExecute$
+				, (isExecuting, canExecuteResult) &#x3D;&gt; {
+					// console.log(&#x27;[command::combineLatest$] update!&#x27;, { isExecuting, canExecuteResult });
+					this.isExecuting &#x3D; isExecuting;
+					this.canExecute &#x3D; !isExecuting &amp;&amp; canExecuteResult;
+					return this.canExecute;
+				});
+			this.canExecute$$ &#x3D; this.canExecute$.subscribe();
+		} else {
+			this.canExecute$ &#x3D; this.isExecuting$.map(x &#x3D;&gt; {
+				const canExecute &#x3D; !x;
+				this.canExecute &#x3D; canExecute;
+				return canExecute;
+			});
+			this.isExecuting$$ &#x3D; this.isExecuting$
+				.do(x &#x3D;&gt; this.isExecuting &#x3D; x)
+				.subscribe();
+		}
+		this.buildExecutionPipe(executeParam, isAsync);
+	}
+
+	public verifyCommandExecutionPipe() {
+		if (this.executionPipe$.observers.length &#x3D;&#x3D;&#x3D; 0) {
+			this.buildExecutionPipe(this.executeParam, this.isAsync);
+		}
+	}
+
+	execute(value?: any) {
+		this.executionPipe$.next(value);
+	}
+
+	async executeWithResult(value?: any): Promise&lt;any&gt; {
+		this.executionPipe$.next(value);
+		return await this.result;
+	}
+
+	destroy() {
+		if (this.executionPipe$$) {
+			this.executionPipe$$.unsubscribe();
+		}
+		if (this.canExecute$$) {
+			this.canExecute$$.unsubscribe();
+		}
+		if (this.isExecuting$$) {
+			this.isExecuting$$.unsubscribe();
+		}
+		if (this.isExecuting$) {
+			this.isExecuting$.complete();
+		}
+	}
+
+	private buildExecutionPipe(executeParm: (any?) &#x3D;&gt; any, isAsync?: boolean) {
+		let pipe$ &#x3D; this.executionPipe$
+			.filter(() &#x3D;&gt; this.canExecute)
+			.do(() &#x3D;&gt; {
+				// console.log(&#x27;[command::excutionPipe$] do#1 - set execute&#x27;);
+				this.isExecuting$.next(true);
+			});
+
+		pipe$ &#x3D; isAsync
+			? pipe$.switchMap((value) &#x3D;&gt; {
+				this.result &#x3D; executeParm(value);
+				console.log(this.result);
+				return this.result;
+			})
+			: pipe$.do((value) &#x3D;&gt; executeParm(value));
+
+		pipe$ &#x3D; pipe$
+			.do(() &#x3D;&gt; {
+				// console.log(&#x27;[command::excutionPipe$] do#2 - set idle&#x27;);
+				this.isExecuting$.next(false);
+			},
+			(e) &#x3D;&gt; {
+				console.log(&#x27;[command::excutionPipe$] do#2 error - set idle&#x27; + e.toString());
+				this.isExecuting$.next(false);
+				this.buildExecutionPipe(executeParm, isAsync);
+			});
+		this.executionPipe$$ &#x3D; pipe$.subscribe();
+	}
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

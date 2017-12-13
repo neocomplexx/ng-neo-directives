@@ -2,9 +2,7 @@ import { Directive, ElementRef, HostListener, Input, OnInit, OnDestroy } from '@
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs/Subscription';
-import { HeaderService } from './header.service';
 import { NeoModalService } from 'ng-neo-modal';
-import { AlertButton } from 'ng-neo-modal';
 
 @Directive({
     selector: '[tabSelectedId]',
