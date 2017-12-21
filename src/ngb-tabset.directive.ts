@@ -9,13 +9,13 @@ import { ITabChangeController } from './controllers/i-tab-change-controller';
  * @author jcangelosi
  */
 @Directive({
-    selector: '[tabSelectedIdNueva], [tabChangeController]',
+    selector: '[tabSelectedId], [tabChangeController]',
 })
-export class NgbTabSetNuevaDirective implements OnInit, OnDestroy {
+export class NgbTabSetDirective implements OnInit, OnDestroy {
     protected el: NgbTabset;
     protected tabSelectedIdSubscribe: Subscription;
 
-    @Input() tabSelectedIdNueva: BehaviorSubject<string>;
+    @Input() tabSelectedId: BehaviorSubject<string>;
 
     @Input() tabChangeController: ITabChangeController;
 
@@ -27,11 +27,11 @@ export class NgbTabSetNuevaDirective implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        if (this.tabSelectedIdNueva) {
-            this.tabSelectedIdSubscribe = this.tabSelectedIdNueva.subscribe((tabSelectedId) => {
+        if (this.tabSelectedId) {
+            this.tabSelectedIdSubscribe = this.tabSelectedId.subscribe((tabSelectedId) => {
                 if (tabSelectedId.length > 0) {
                     const tabs = this.el as NgbTabset;
-                    const previousValue = this.tabSelectedIdNueva.value;
+                    const previousValue = this.tabSelectedId.value;
                     if (tabs.activeId !== tabSelectedId) {
                         tabs.select(tabSelectedId);
                     }
@@ -63,8 +63,8 @@ export class NgbTabSetNuevaDirective implements OnInit, OnDestroy {
 
     private cambiarTab($event: any, force: boolean = false) {
         const tabSelecting = $event.nextId;
-        if (force || this.tabSelectedIdNueva.value !== tabSelecting) {
-            this.tabSelectedIdNueva.next(tabSelecting);
+        if (force || this.tabSelectedId.value !== tabSelecting) {
+            this.tabSelectedId.next(tabSelecting);
         }
     }
 

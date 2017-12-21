@@ -8,14 +8,14 @@ import { StringsDirective } from './strings.directive';
 import { NumbersDirective } from './numbers.directive';
 import { NgbTabSetDirective } from './ngb-tabset.directive';
 import { KeyListenerDirective } from './keyListener.directive';
-
+import { ITabChangeController } from './controllers/i-tab-change-controller';
 
 export * from './ng2-command/command.directive';
 export * from './onReturn.directive';
 export * from './strings.directive';
 export * from './numbers.directive';
 export * from './ngb-tabset.directive';
-
+export * from './controllers/i-tab-change-controller';
 export * from './keyListener.directive';
 
 
@@ -29,7 +29,7 @@ export * from './keyListener.directive';
     StringsDirective,
     NumbersDirective,
     NgbTabSetDirective,
-    KeyListenerDirective
+    KeyListenerDirective,
   ],
   exports: [
     CommandDirective,
