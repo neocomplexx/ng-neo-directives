@@ -114,10 +114,10 @@
                                     <a href="../directives/KeyListenerDirective.html" >KeyListenerDirective</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../directives/NgbTabSetNuevaDirective.html" >NgbTabSetNuevaDirective</a>
+                                    <a href="../directives/NgbTabSetNuevaDirective.html"  data-type="entity-link" class="active" >NgbTabSetNuevaDirective</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../directives/NumbersDirective.html"  data-type="entity-link" class="active" >NumbersDirective</a>
+                                    <a href="../directives/NumbersDirective.html" >NumbersDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/OnReturnDirective.html" >OnReturnDirective</a>
@@ -301,10 +301,10 @@
                                            <a href="../directives/KeyListenerDirective.html" >KeyListenerDirective</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../directives/NgbTabSetNuevaDirective.html" >NgbTabSetNuevaDirective</a>
+                                           <a href="../directives/NgbTabSetNuevaDirective.html"  data-type="entity-link" class="active" >NgbTabSetNuevaDirective</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../directives/NumbersDirective.html"  data-type="entity-link" class="active" >NumbersDirective</a>
+                                           <a href="../directives/NumbersDirective.html" >NumbersDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/OnReturnDirective.html" >OnReturnDirective</a>
@@ -397,7 +397,7 @@
 
 <ol class="breadcrumb">
   <li>Directives</li>
-  <li>NumbersDirective</li>
+  <li>NgbTabSetNuevaDirective</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -418,11 +418,23 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/numbers.directive.ts</code>
+            <code>src/ngb-tabset.directive.ts</code>
         </p>
 
 
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                        <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+            </p>
 
+            <p class="comment">
+                <h3>Example</h3>
+            </p>
+            <div class="io-description">
+            </div>
 
         <section>
             <h3>Metadata</h3>
@@ -431,7 +443,7 @@
 
                     <tr>
                         <td class="col-md-3">selector</td>
-                        <td class="col-md-9"><code>[isNumber]</code></td>
+                        <td class="col-md-9"><code>[tabSelectedIdNueva], [tabChangeController]</code></td>
                     </tr>
 
                 </tbody>
@@ -451,8 +463,37 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                            <span class="modifier">Private</span>
+                                            <span class="modifier">Protected</span>
                                         <a href="#el">el</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Protected</span>
+                                        <a href="#onTabChanging">onTabChanging</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Protected</span>
+                                        <a href="#tabSelectedIdSubscribe">tabSelectedIdSubscribe</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#cambiarTab">cambiarTab</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ngOnDestroy">ngOnDestroy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ngOnInit">ngOnInit</a>
                                     </li>
                                 </ul>
                             </td>
@@ -466,7 +507,10 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <a href="#isNumber">isNumber</a>
+                                        <a href="#tabChangeController">tabChangeController</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tabSelectedIdNueva">tabSelectedIdNueva</a>
                                     </li>
                                 </ul>
                             </td>
@@ -480,7 +524,7 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <a href="#keydown">keydown</a>
+                                        <a href="#tabChange">tabChange</a>
                                     </li>
                                 </ul>
                             </td>
@@ -495,12 +539,12 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <code>constructor(_el: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>)</code>
+                                    <code>constructor(_el: NgbTabset, neoModalService: NeoModalService)</code>
                                 </td>
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/numbers.directive.ts:7</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/ngb-tabset.directive.ts:22</a></div>
                                         </td>
                                     </tr>
             
@@ -521,7 +565,16 @@
                                                             <tr>
                                                               <td>_el</td>
                                                               <td>
-                                                                        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                                                        <code>NgbTabset</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>neoModalService</td>
+                                                              <td>
+                                                                        <code>NeoModalService</code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -542,19 +595,40 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
-                                    <a name="isNumber"></a>
-                                    <code>isNumber</code>
+                                    <a name="tabChangeController"></a>
+                                    <code>tabChangeController</code>
                                 </td>
                                 <td class="col-md-10">
                                       <p>
-                                        <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                        <em>Type:</em>    <code><a href="../interfaces/ITabChangeController.html" target="_self" >ITabChangeController</a></code>
 
                                       </p>
                                 </td>
                             </tr>
                                     <tr>
                                         <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/numbers.directive.ts:7</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/ngb-tabset.directive.ts:20</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="tabSelectedIdNueva"></a>
+                                    <code>tabSelectedIdNueva</code>
+                                </td>
+                                <td class="col-md-10">
+                                      <p>
+                                        <em>Type:</em>    <code>BehaviorSubject&lt;string&gt;</code>
+
+                                      </p>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/ngb-tabset.directive.ts:18</a></div>
                                         </td>
                                     </tr>
                         </tbody>
@@ -568,12 +642,12 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="keydown"></a>
+                                    <a name="tabChange"></a>
                                     <span class="name">
                                         <b>
-                                        keydown
+                                        tabChange
                                         </b>
-                                        <a href="#keydown"><span class="fa fa-link"></span></a>
+                                        <a href="#tabChange"><span class="fa fa-link"></span></a>
                                     </span>
                                 </td>
                             </tr>
@@ -584,14 +658,14 @@
                                 </tr>
                             <tr>
                                 <td class="col-md-4">
-            <code>keydown(e: KeyboardEvent)</code>
+            <code>tabChange($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/numbers.directive.ts:13</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/ngb-tabset.directive.ts:48</a></div>
                                         </td>
                                     </tr>
             
@@ -599,6 +673,163 @@
                     </table>
             </section>
 
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="cambiarTab"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        cambiarTab
+                                        </b>
+                                        <a href="#cambiarTab"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>cambiarTab($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, force: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/ngb-tabset.directive.ts:64</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>$event</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>force</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="ngOnDestroy"></a>
+                                    <span class="name">
+                                        <b>
+                                        ngOnDestroy
+                                        </b>
+                                        <a href="#ngOnDestroy"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>ngOnDestroy()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/ngb-tabset.directive.ts:43</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="ngOnInit"></a>
+                                    <span class="name">
+                                        <b>
+                                        ngOnInit
+                                        </b>
+                                        <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>ngOnInit()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/ngb-tabset.directive.ts:29</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
 
             <section>
                 
@@ -612,7 +843,7 @@
                                     <a name="el"></a>
                                     <span class="name">
                                         <b>
-                                            <span class="modifier">Private</span>
+                                            <span class="modifier">Protected</span>
                                         el
                                         </b>
                                         <a href="#el"><span class="fa fa-link"></span></a>
@@ -621,19 +852,89 @@
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>el:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>el:     <code>NgbTabset</code>
             </code>
                                 </td>
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                        <i>Type : </i>    <code>NgbTabset</code>
             
                                     </td>
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/numbers.directive.ts:6</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/ngb-tabset.directive.ts:15</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="onTabChanging"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Protected</span>
+                                        onTabChanging
+                                        </b>
+                                        <a href="#onTabChanging"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>onTabChanging:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/ngb-tabset.directive.ts:22</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="tabSelectedIdSubscribe"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Protected</span>
+                                        tabSelectedIdSubscribe
+                                        </b>
+                                        <a href="#tabSelectedIdSubscribe"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>tabSelectedIdSubscribe:     <code>Subscription</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subscription</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/ngb-tabset.directive.ts:16</a></div>
                                         </td>
                                     </tr>
             
@@ -647,27 +948,76 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import { Directive, ElementRef, HostListener, Input } from &#x27;@angular/core&#x27;;
-@Directive({
-    selector: &#x27;[isNumber]&#x27;
-})
-export class NumbersDirective {
-    private el: ElementRef;
-    @Input() isNumber: any;
+        <pre class="line-numbers"><code class="language-typescript">import { Directive, ElementRef, HostListener, Input, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
+import { NgbTabset } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
+import { NeoModalService } from &#x27;ng-neo-modal&#x27;;
+import { ITabChangeController } from &#x27;./controllers/i-tab-change-controller&#x27;;
 
-    constructor(private _el: ElementRef) {
+/**
+ * @author jcangelosi
+ */
+@Directive({
+    selector: &#x27;[tabSelectedIdNueva], [tabChangeController]&#x27;,
+})
+export class NgbTabSetNuevaDirective implements OnInit, OnDestroy {
+    protected el: NgbTabset;
+    protected tabSelectedIdSubscribe: Subscription;
+
+    @Input() tabSelectedIdNueva: BehaviorSubject&lt;string&gt;;
+
+    @Input() tabChangeController: ITabChangeController;
+
+    protected onTabChanging: boolean;
+
+    constructor(protected _el: NgbTabset, protected neoModalService: NeoModalService) {
         this.el &#x3D; this._el;
+        this.onTabChanging &#x3D; false;
     }
 
-    @HostListener(&#x27;keydown&#x27;, [&#x27;$event&#x27;]) onKeyDown(e: KeyboardEvent) {
-        if (e.key &#x3D;&#x3D;&#x3D; &#x27;Delete&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;Tab&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;Backspace&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;ArrowLeft&#x27; ||
-            e.altKey || e.ctrlKey || e.key &#x3D;&#x3D;&#x3D; &#x27;Home&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;End&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;PageDown&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;PageUp&#x27; ||
-            e.key &#x3D;&#x3D;&#x3D; &#x27;ArrowRight&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;Control&#x27; || e.key &#x3D;&#x3D;&#x3D; &#x27;Alt&#x27;  || e.key &#x3D;&#x3D;&#x3D; &#x27;Shift&#x27;) { return; }
-
-        if (!(e.key &gt;&#x3D; &#x27;0&#x27; &amp;&amp; e.key &lt;&#x3D; &#x27;9&#x27;)) {
-            e.preventDefault();
+    ngOnInit() {
+        if (this.tabSelectedIdNueva) {
+            this.tabSelectedIdSubscribe &#x3D; this.tabSelectedIdNueva.subscribe((tabSelectedId) &#x3D;&gt; {
+                if (tabSelectedId.length &gt; 0) {
+                    const tabs &#x3D; this.el as NgbTabset;
+                    const previousValue &#x3D; this.tabSelectedIdNueva.value;
+                    if (tabs.activeId !&#x3D;&#x3D; tabSelectedId) {
+                        tabs.select(tabSelectedId);
+                    }
+                }
+            });
         }
     }
+
+    ngOnDestroy() {
+        if (this.tabSelectedIdSubscribe) { this.tabSelectedIdSubscribe.unsubscribe(); }
+    }
+
+
+    @HostListener(&#x27;tabChange&#x27;, [&#x27;$event&#x27;]) async onTabChange($event: any) {
+        if (this.onTabChanging) {
+            return;
+        }
+        this.onTabChanging &#x3D; true;
+        if (this.tabChangeController) {
+            $event.preventDefault();
+            if (await this.tabChangeController.canChangeTab()) {
+                this.cambiarTab($event, true);
+            }
+        } else {
+            this.cambiarTab($event);
+        }
+        this.onTabChanging &#x3D; false;
+    }
+
+    private cambiarTab($event: any, force: boolean &#x3D; false) {
+        const tabSelecting &#x3D; $event.nextId;
+        if (force || this.tabSelectedIdNueva.value !&#x3D;&#x3D; tabSelecting) {
+            this.tabSelectedIdNueva.next(tabSelecting);
+        }
+    }
+
 }
 </code></pre>
     </div>
