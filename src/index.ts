@@ -9,6 +9,7 @@ import { NumbersDirective } from './numbers.directive';
 import { NgbTabSetDirective } from './ngb-tabset.directive';
 import { KeyListenerDirective } from './keyListener.directive';
 import { ITabChangeController } from './controllers/i-tab-change-controller';
+import {NeoAutofocusDirective} from './neo-autofocus.directive';
 
 export * from './ng2-command/command.directive';
 export * from './onReturn.directive';
@@ -17,6 +18,7 @@ export * from './numbers.directive';
 export * from './ngb-tabset.directive';
 export * from './controllers/i-tab-change-controller';
 export * from './keyListener.directive';
+export * from './neo-autofocus.directive'
 
 
 @NgModule({
@@ -30,6 +32,7 @@ export * from './keyListener.directive';
     NumbersDirective,
     NgbTabSetDirective,
     KeyListenerDirective,
+    NeoAutofocusDirective
   ],
   exports: [
     CommandDirective,
@@ -37,7 +40,8 @@ export * from './keyListener.directive';
     StringsDirective,
     NumbersDirective,
     NgbTabSetDirective,
-    KeyListenerDirective
+    KeyListenerDirective,
+    NeoAutofocusDirective
   ]
 })
 export class NeoDirectivesModule {
@@ -50,8 +54,8 @@ export class NeoDirectivesModule {
 			]
 		};
   }
-  
-  
+
+
 }
 
 export function provideConfig(config: CommandOptions): any {

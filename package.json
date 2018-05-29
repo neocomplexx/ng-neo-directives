@@ -1,6 +1,6 @@
 {
   "name": "neo-directives",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -23,7 +23,9 @@
     "email": "info@neocomplexx.com"
   },
   "keywords": [
-    "angular","command","pattern"
+    "angular",
+    "command",
+    "pattern"
   ],
   "license": "MIT",
   "bugs": {
@@ -74,5 +76,9 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "generator-angular2-library": "^12.4.1",
+    "yo": "^2.0.1"
   }
 }
