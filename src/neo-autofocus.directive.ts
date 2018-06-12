@@ -1,5 +1,4 @@
 import { Directive, ElementRef, OnInit, AfterViewInit, Input } from '@angular/core';
-import { Subscription } from 'rxjs/Subscription';
 
 @Directive({
   selector: '[neoAutofocus]'

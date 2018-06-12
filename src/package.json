@@ -1,6 +1,6 @@
 {
   "name": "ng-neo-directives",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": ""
@@ -16,15 +16,14 @@
   "bugs": {
     "url": ""
   },
-  "main": "neo-directives.umd.js",
-  "module": "neo-directives.js",
-  "jsnext:main": "neo-directives.js",
-  "typings": "neo-directives.d.ts",
+  "main": "ng-neo-directives.umd.js",
+  "module": "ng-neo-directives.js",
+  "jsnext:main": "ng-neo-directives.js",
+  "typings": "ng-neo-directives.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "@ng-bootstrap/ng-bootstrap": "",
-    "ng-neo-modal":"^1.0.0",
+    "@ng-bootstrap/ng-bootstrap": "1.0.0-beta.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   }

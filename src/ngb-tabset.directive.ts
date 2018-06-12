@@ -1,8 +1,7 @@
-import { Directive, ElementRef, HostListener, Input, OnInit, OnDestroy } from '@angular/core';
+import { Directive, HostListener, Input, OnInit, OnDestroy } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs/Subscription';
-import { NeoModalService } from 'ng-neo-modal';
 import { ITabChangeController } from './controllers/i-tab-change-controller';
 
 /**
@@ -21,7 +20,7 @@ export class NgbTabSetDirective implements OnInit, OnDestroy {
 
     protected onTabChanging: boolean;
 
-    constructor(protected _el: NgbTabset, protected neoModalService: NeoModalService) {
+    constructor(protected _el: NgbTabset) {
         this.el = this._el;
         this.onTabChanging = false;
     }

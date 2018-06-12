@@ -1,4 +1,4 @@
-# neo-directives
+# ng-neo-directives
 Command pattern for Angular
 
 ## Installation
@@ -19,7 +19,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import library
-import { NeoDirectivesModule } from 'neo-directives';
+import { NeoDirectivesModule } from 'nng-eo-directives';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ export class AppModule { }
 
 
 // Import library in child modules in order to use directives
-import { NeoDirectivesModule } from 'neo-directives';
+import { NeoDirectivesModule } from 'ng-neo-directives';
 
 @NgModule({
   declarations: [

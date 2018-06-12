@@ -5,22 +5,32 @@ import {
 	OnInit,
 	OnDestroy,
 	Input,
-	HostBinding,
 	HostListener,
 	Renderer,
 	ElementRef,
-	Inject
+	InjectionToken
 } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { OpaqueToken } from '@angular/core';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/observable/combineLatest';
+
+export const COMMAND_CONFIG = new InjectionToken<string>('COMMAND_CONFIG');
+
+export const COMMAND_DEFAULT_CONFIG: CommandOptions = {
+	executingCssClass: 'executing',
+};
+
+export function provideConfig(config: CommandOptions): any {
+	return Object.assign({}, COMMAND_DEFAULT_CONFIG, config);
+}
+
+
 /**
  *
  * ### Example with options
@@ -101,12 +111,6 @@ export interface CommandOptions {
 	 */
 	executingCssClass: string;
 }
-
-export const COMMAND_DEFAULT_CONFIG: CommandOptions = {
-	executingCssClass: 'executing',
-};
-
-export const COMMAND_CONFIG = new OpaqueToken('Command Config');
 
 export interface ICommand {
 	/**
@@ -245,11 +249,11 @@ export class Command implements ICommand {
 				// console.log('[command::excutionPipe$] do#2 - set idle');
 				this.isExecuting$.next(false);
 			},
-			(e) => {
-				console.log('[command::excutionPipe$] do#2 error - set idle' + e.toString());
-				this.isExecuting$.next(false);
-				this.buildExecutionPipe(executeParm, isAsync);
-			});
+				(e) => {
+					console.log('[command::excutionPipe$] do#2 error - set idle' + e.toString());
+					this.isExecuting$.next(false);
+					this.buildExecutionPipe(executeParm, isAsync);
+				});
 		this.executionPipe$$ = pipe$.subscribe();
 	}
 
